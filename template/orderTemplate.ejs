@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order List</title>
+    <style>
+        .card {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Your Order List</h1>
+    <% orders.forEach((category) => { %>
+        <h2><%= category.category %></h2>
+        <% category.orders.forEach((order) => { %>
+            <div class="card">
+                <h3>Order Details</h3>
+                <p>Order ID: <%= order.orderId %></p>
+                <p>Product Name: <%= order.product.name %></p>
+                <p>Store ID: <%= order.store %></p>
+                <p>Quantity: <%= order.quantity %></p>
+                <p>Stock: <%= order.stock %></p>
+            </div>
+        <% }); %>
+    <% }); %>
+</body>
+</html>

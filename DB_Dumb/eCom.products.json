@@ -1,0 +1,48 @@
+[{
+  "_id": {
+    "$oid": "66179a1bb1c72a337d255cf4"
+  },
+  "name": "Carry Masala Powder",
+  "category": {
+    "$oid": "661799dab1c72a337d255cf2"
+  },
+  "size": 4,
+  "price": 200,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66179a30b1c72a337d255cf6"
+  },
+  "name": "Chilli Powder",
+  "category": {
+    "$oid": "661799dab1c72a337d255cf2"
+  },
+  "size": 10,
+  "price": 25,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6617bd9f3fecedfebe61661e"
+  },
+  "name": "Milk",
+  "category": {
+    "$oid": "661799dab1c72a337d255cf2"
+  },
+  "size": 21,
+  "price": 123,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6617bdf9907736a2393ff006"
+  },
+  "name": "Anbu",
+  "category": {
+    "$oid": "661799dab1c72a337d255cf2"
+  },
+  "size": 12,
+  "price": 12,
+  "__v": 0
+}]

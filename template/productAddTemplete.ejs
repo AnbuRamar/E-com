@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Product</title>
+</head>
+
+<body>
+    <h1>Add Product</h1>
+    <form id="productForm">
+        <label for="name">Product Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="category">Category:</label>
+        <select id="category" name="category" required>
+            <% categories.forEach(category=> { %>
+                <option value="<%= category._id %>">
+                    <%= category.name %>
+                </option>
+                <% }); %>
+        </select><br><br>
+
+        <label for="size">Size:</label>
+        <input type="number" id="size" name="size" required><br><br>
+
+        <label for="price">Price:</label>
+        <input type="number" id="price" name="price" required><br><br>
+
+        <button type="button" onclick="submitForm()">Add Product</button>
+    </form>
+
+    <script>
+        function submitForm() {
+            const form = document.getElementById('productForm');
+            const formData = new FormData(form);
+            const name = formData.get('name');
+            const category = formData.get('category');
+            const size = formData.get('size');
+            const price = formData.get('price');
+            fetch('/api/products', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    name: name,
+                    category: category,
+                    size: size,
+                    price: price
+                })
+            })
+                .then(response => {
+                    if (response.ok) {
+                        alert("Product added successfully!");
+                    } else {
+                        alert('Failed to add product');
+                    }
+                })
+                .catch(error => {
+                    alert('Error adding product:', error);
+                });
+        }
+    </script>
+</body>
+
+</html>

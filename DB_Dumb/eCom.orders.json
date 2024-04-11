@@ -1,0 +1,30 @@
+[{
+  "_id": {
+    "$oid": "6617a34e7853ab7ffb93751a"
+  },
+  "orderId": 12000,
+  "product": {
+    "$oid": "66179a30b1c72a337d255cf6"
+  },
+  "store": {
+    "$oid": "66179a7897dc96c2b8f3f811"
+  },
+  "quantity": 50,
+  "stock": 10,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6617a3537853ab7ffb93751d"
+  },
+  "orderId": 12001,
+  "product": {
+    "$oid": "66179a30b1c72a337d255cf6"
+  },
+  "store": {
+    "$oid": "66179a7897dc96c2b8f3f811"
+  },
+  "quantity": 75,
+  "stock": 10,
+  "__v": 0
+}]

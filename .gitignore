@@ -1,0 +1,18 @@
+# Node modules
+node_modules/
+
+package-lock.json
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Optional npm cache directory
+.npm
+
+# Local development env files
+.env
+
+# VS Code
+.vscode/

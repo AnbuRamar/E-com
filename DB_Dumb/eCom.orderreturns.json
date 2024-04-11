@@ -1,0 +1,16 @@
+[{
+  "_id": {
+    "$oid": "6617a0e7c545440c4356405c"
+  },
+  "orderId": {
+    "$oid": "6617a34e7853ab7ffb93751a"
+  },
+  "product": {
+    "$oid": "66179a30b1c72a337d255cf6"
+  },
+  "store": {
+    "$oid": "66179a7897dc96c2b8f3f811"
+  },
+  "returnQuantity": 2,
+  "__v": 0
+}]
